@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональная уборка в Перми - "Чистый дом 159" | 24/7, гарантия качества</title>
+    <meta name="description" content="Профессиональная уборка в Перми от "Чистый дом 159". Платите только после проверки качества! Выезд в день обращения, 100% гарантия результата. +7-992-212-20-72">
+    <meta name="keywords" content="уборка Пермь, клининг Пермь, уборка квартир Пермь, генеральная уборка Пермь, мойка окон Пермь, химчистка мебели Пермь, уборка после ремонта Пермь">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Чистый дом 159">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Профессиональная уборка в Перми - Чистый дом 159">
+    <meta property="og:description" content="Платите только после проверки качества! Выезд в день обращения, 100% гарантия результата.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Чистый дом 159",
+        "description": "Профессиональная уборка в Перми. Платите только после проверки качества!",
+        "url": "",
+        "telephone": "+7-992-212-20-72",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Пермь",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "58.0105",
+            "longitude": "56.2502"
+        },
+        "openingHours": "Mo-Su 00:00-24:00",
+        "priceRange": "300-8000",
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "58.0105",
+                "longitude": "56.2502"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Услуги уборки",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Поддерживающая уборка",
+                        "description": "Пылесос, влажная уборка, мытье полов"
+                    },
+                    "price": "1500",
+                    "priceCurrency": "RUB"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Генеральная уборка",
+                        "description": "Глубокая чистка, мытье окон, сантехника"
+                    },
+                    "price": "2500",
+                    "priceCurrency": "RUB"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Manrope', sans-serif;
+            line-height: 1.6;
+            color: #1D2939;
+            background-color: #F8F9FA;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        .header {
+            background: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #007AFF, #0056B3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            animation: logoGlow 3s ease-in-out infinite;
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #007AFF, #00D4FF, #007AFF);
+            border-radius: 14px;
+            z-index: -1;
+            animation: borderGlow 2s linear infinite;
+        }
+
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, rgba(0, 122, 255, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes logoGlow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(0, 122, 255, 0.6);
+            }
+        }
+
+        @keyframes borderGlow {
+            0% {
+                background: linear-gradient(45deg, #007AFF, #00D4FF, #007AFF);
+            }
+            25% {
+                background: linear-gradient(45deg, #00D4FF, #007AFF, #00D4FF);
+            }
+            50% {
+                background: linear-gradient(45deg, #007AFF, #00D4FF, #007AFF);
+            }
+            75% {
+                background: linear-gradient(45deg, #00D4FF, #007AFF, #00D4FF);
+            }
+            100% {
+                background: linear-gradient(45deg, #007AFF, #00D4FF, #007AFF);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.6;
+            }
+        }
+        
+        .nav {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #475467;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav a:hover {
+            color: #007AFF;
+        }
+        
+        .header-contacts {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        .phone {
+            font-size: 18px;
+            font-weight: 600;
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #007AFF;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: #0056B3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 122, 255, 0.3);
+        }
+        
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+        
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: #475467;
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(235, 245, 255, 0.8) 100%);
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="0.5" fill="%23fff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #1D2939;
+        }
+        
+        .hero-text .subtitle {
+            font-size: 18px;
+            color: #475467;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+        
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            background: #007AFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .btn-primary {
+            background: #007AFF;
+            color: white;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-secondary {
+            background: rgba(0, 122, 255, 0.1);
+            color: #007AFF;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 122, 255, 0.2);
+        }
+        
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero-image {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #007AFF, #0056B3);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 80px;
+            opacity: 0.9;
+            position: relative;
+            overflow: hidden;
+            animation: heroFloat 6s ease-in-out infinite;
+        }
+
+        .hero-image video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                rgba(0, 122, 255, 0.1) 0%, 
+                rgba(0, 212, 255, 0.1) 50%, 
+                rgba(0, 122, 255, 0.1) 100%);
+            z-index: 1;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #007AFF, #00D4FF, #007AFF);
+            border-radius: 22px;
+            z-index: -1;
+            animation: borderSpin 4s linear infinite;
+        }
+
+        @keyframes heroFloat {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-10px) rotate(1deg);
+            }
+            50% {
+                transform: translateY(-5px) rotate(0deg);
+            }
+            75% {
+                transform: translateY(-15px) rotate(-1deg);
+            }
+        }
+
+        @keyframes shimmer {
+            0%, 100% {
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes borderSpin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Sections */
+        .section {
+            padding: 96px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1D2939;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #475467;
+            margin-bottom: 64px;
+        }
+        
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+        
+        .card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 8px rgba(29, 41, 57, 0.06);
+            transition: all 0.3s ease;
+            border: 1px solid #EAECF0;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(29, 41, 57, 0.08);
+        }
+        
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: #EBF5FF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            color: #007AFF;
+            font-size: 32px;
+        }
+        
+        .card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1D2939;
+        }
+        
+        .card-price {
+            font-size: 14px;
+            font-weight: 500;
+            color: #475467;
+            margin-bottom: 16px;
+        }
+        
+        .card-description {
+            font-size: 16px;
+            color: #475467;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        
+        .card-features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        
+        .card-features li {
+            font-size: 14px;
+            color: #475467;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .card-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #12B76A;
+            font-weight: bold;
+        }
+        
+        .card-button {
+            width: 100%;
+            background: #007AFF;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card-button:hover {
+            background: #0056B3;
+        }
+        
+        /* Statistics */
+        .stats {
+            background: linear-gradient(135deg, #007AFF, #0056B3);
+            color: white;
+            padding: 64px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 48px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .stat-item p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: #FFFFFF;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        
+        .contact-info h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #1D2939;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: #EBF5FF;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #007AFF;
+            font-size: 20px;
+        }
+        
+        .contact-details h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #1D2939;
+        }
+        
+        .contact-details p {
+            font-size: 16px;
+            color: #475467;
+        }
+        
+        .contact-details a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+        
+        .social-link {
+            width: 48px;
+            height: 48px;
+            background: #007AFF;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: #0056B3;
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 40px;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav, .header-contacts {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: flex;
+            }
+            
+            .hero {
+                min-height: 450px;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 32px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .hero-image {
+                width: 300px;
+                height: 300px;
+                font-size: 60px;
+            }
+            
+            .section {
+                padding: 64px 0;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            
+            .container {
+                padding: 0 16px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .animate-on-scroll:nth-child(1) { animation-delay: 0.1s; }
+        .animate-on-scroll:nth-child(2) { animation-delay: 0.2s; }
+        .animate-on-scroll:nth-child(3) { animation-delay: 0.3s; }
+        .animate-on-scroll:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <img src="logo_base.jpg" alt="Чистый дом 159 - Логотип">
+                    </div>
+                    <span>Чистый дом 159</span>
+                </a>
+                
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-contacts">
+                    <a href="tel:+79922122072" class="phone">+7 (992) 212-20-72</a>
+                    <a href="tel:+79922122072" class="cta-button">Заказать звонок</a>
+                </div>
+                
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Профессиональная уборка в Перми 💎</h1>
+                    <p class="subtitle">Забудьте о хлопотах с уборкой навсегда!</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature">
+                            <div class="feature-icon">🛡️</div>
+                            <span>Платите только после проверки качества!</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <span>Выезд в день обращения</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🏆</div>
+                            <span>100% гарантия результата</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Рассчитать стоимость бесплатно</a>
+                        <a href="tel:+79922122072" class="btn-secondary">Заказать уборку</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <video autoplay muted loop playsinline>
+                            <source src="hero_video.mp4" type="video/mp4">
+                            <i class="fas fa-home"></i>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">🏆 Почему множество клиентов выбрали нас?</h2>
+            <p class="section-subtitle">Преимущества, которые делают нас лучшими в Перми</p>
+            
+            <div class="cards-grid">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">💰</div>
+                    <h3>Оплата после результата</h3>
+                    <div class="card-price">Без предоплаты</div>
+                    <p class="card-description">Платите только после проверки качества уборки. Если результат вас не устроит - не платите!</p>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">⚡</div>
+                    <h3>Срочный выезд 24/7</h3>
+                    <div class="card-price">В течение 1 часа</div>
+                    <p class="card-description">Работаем круглосуточно. Приезжаем в день обращения для экстренных ситуаций.</p>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🧽</div>
+                    <h3>Безопасные эко средства</h3>
+                    <div class="card-price">100% безвредно</div>
+                    <p class="card-description">Используем только сертифицированные моющие средства, безопасные для детей и животных.</p>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">👥</div>
+                    <h3>Команда экспертов</h3>
+                    <div class="card-price">Обучение и сертификация</div>
+                    <p class="card-description">Опытные сотрудники с регулярным обучением новым технологиям уборки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">✨ Наши услуги для любой ситуации ✨</h2>
+            <p class="section-subtitle">Профессиональный подход к любому виду уборки</p>
+            
+            <!-- Базовые услуги -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">🏠 Основная уборка — от 800₽!</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏠</div>
+                        <h3>1-комнатная квартира</h3>
+                        <div class="card-price">от 800₽</div>
+                        <ul class="card-features">
+                            <li>Пылесос пола</li>
+                            <li>Влажная уборка</li>
+                            <li>Протирание пыли</li>
+                            <li>Уборка кухни</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать за 800₽</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏡</div>
+                        <h3>2-комнатная квартира</h3>
+                        <div class="card-price">от 1200₽</div>
+                        <ul class="card-features">
+                            <li>Пылесос всех комнат</li>
+                            <li>Влажная уборка</li>
+                            <li>Протирание пыли</li>
+                            <li>Уборка кухни и санузла</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать за 1200₽</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏘️</div>
+                        <h3>3-комнатная квартира</h3>
+                        <div class="card-price">от 1600₽</div>
+                        <ul class="card-features">
+                            <li>Пылесос всех комнат</li>
+                            <li>Влажная уборка</li>
+                            <li>Протирание пыли</li>
+                            <li>Уборка кухни и всех санузлов</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать за 1600₽</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏢</div>
+                        <h3>4+ комнат</h3>
+                        <div class="card-price">от 2000₽</div>
+                        <ul class="card-features">
+                            <li>Пылесос всех комнат</li>
+                            <li>Влажная уборка</li>
+                            <li>Протирание пыли</li>
+                            <li>Полная уборка всех помещений</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать за 2000₽</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🪟</div>
+                        <h3>Химчистка мебели</h3>
+                        <div class="card-price">от 300₽</div>
+                        <ul class="card-features">
+                            <li>Диваны и кресла</li>
+                            <li>Матрасы</li>
+                            <li>Ковры и ковролин</li>
+                            <li>Профессиональная химия</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать за 300₽</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🔥</div>
+                        <h3>Парогенератор</h3>
+                        <div class="card-price">от 300₽/м²</div>
+                        <ul class="card-features">
+                            <li>Глубокая дезинфекция</li>
+                            <li>Удаление пятен</li>
+                            <li>Без химических средств</li>
+                            <li>Для чувствительных поверхностей</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать за 300₽/м²</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B2B услуги -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">🏢 Клининг для бизнеса — от 12₽/м²!</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏢</div>
+                        <h3>Офисы</h3>
+                        <div class="card-price">от 15₽/м²</div>
+                        <ul class="card-features">
+                            <li>Ежедневная уборка</li>
+                            <li>Рабочие места</li>
+                            <li>Переговорные</li>
+                            <li>Кухни и зоны отдыха</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заключить договор</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🛒</div>
+                        <h3>Торговые площади</h3>
+                        <div class="card-price">от 12₽/м²</div>
+                        <ul class="card-features">
+                            <li>Магазины и бутики</li>
+                            <li>Торговые залы</li>
+                            <li>Склады</li>
+                            <li>Подсобные помещения</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Рассчитать стоимость</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏭</div>
+                        <h3>Производственные</h3>
+                        <div class="card-price">от 20₽/м²</div>
+                        <ul class="card-features">
+                            <li>Цеха и участки</li>
+                            <li>Служебные помещения</li>
+                            <li>Лаборатории</li>
+                            <li>Санитарные зоны</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Обсудить условия</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏗️</div>
+                        <h3>Строительный клининг</h3>
+                        <div class="card-price">от 35₽/м²</div>
+                        <ul class="card-features">
+                            <li>Уборка после ремонта</li>
+                            <li>Строительный мусор</li>
+                            <li>Очистка площадок</li>
+                            <li>Подготовка к сдаче</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать расчет</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 32px 0; padding: 24px; background: #EBF5FF; border-radius: 12px;">
+                    <p style="font-size: 16px; color: #007AFF; margin-bottom: 16px;">⭐ БОНУС ДЛЯ БОЛЬШИХ ОРГАНИЗАЦИЙ:<br>При заказе от 5000 м² — скидка 20% + первая уборка БЕСПЛАТНО</p>
+                    <a href="tel:+79922122072" class="cta-button">Обсудить индивидуальные условия</a>
+                </div>
+            </div>
+
+            <!-- Экстренная уборка -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">🚨 Экстренная уборка — 45-70₽/м²!</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🚨</div>
+                        <h3>Срочный выезд</h3>
+                        <div class="card-price">45-70₽/м²</div>
+                        <ul class="card-features">
+                            <li>Прибытие в течение часа</li>
+                            <li>Круглосуточно 24/7</li>
+                            <li>Полный комплект оборудования</li>
+                            <li>Экстренная дезинфекция</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Вызвать срочно</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🔥</div>
+                        <h3>После пожаров</h3>
+                        <div class="card-price">от 60₽/м²</div>
+                        <ul class="card-features">
+                            <li>Удаление копоти</li>
+                            <li>Устранение запахов</li>
+                            <li>Очистка поверхностей</li>
+                            <li>Демонтаж поврежденных конструкций</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Вызвать эксперта</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">💧</div>
+                        <h3>После затоплений</h3>
+                        <div class="card-price">от 50₽/м²</div>
+                        <ul class="card-features">
+                            <li>Просушка помещений</li>
+                            <li>Дезинфекция</li>
+                            <li>Утилизация поврежденных</li>
+                            <li>Реставрация</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать восстановление</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🌪️</div>
+                        <h3>После ураганов</h3>
+                        <div class="card-price">от 45₽/м²</div>
+                        <ul class="card-features">
+                            <li>Расчистка территории</li>
+                            <li>Удаление обломков</li>
+                            <li>Восстановление ландшафта</li>
+                            <li>Уборка прилегающей территории</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Обратиться сейчас</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏠</div>
+                        <h3>После взрывов</h3>
+                        <div class="card-price">от 70₽/м²</div>
+                        <ul class="card-features">
+                            <li>Аварийно-восстановительные</li>
+                            <li>Безопасная уборка</li>
+                            <li>Специальное оборудование</li>
+                            <li>Сертифицированные технологии</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Вызвать специалистов</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 32px 0; padding: 24px; background: #FFF3CD; border-radius: 12px;">
+                    <p style="font-size: 18px; color: #856404; margin-bottom: 16px;">🚨 ЭКСТРЕННЫЙ ВЫЕЗД В ТЕЧЕНИЕ 1 ЧАСА!</p>
+                    <p style="font-size: 16px; color: #856404; margin-bottom: 16px;">📞 ЕДИНАЯ ДИСПЕТЧЕРСКАЯ: +7 (992) 212-20-72</p>
+                    <a href="tel:+79922122072" class="cta-button" style="background: #856404;">Звонить сейчас 24/7</a>
+                </div>
+            </div>
+
+            <!-- Социальные услуги -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">👴 Социальные услуги — специальные цены!</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">👴</div>
+                        <h3>Пенсионерам</h3>
+                        <div class="card-price">скидка 20-30%</div>
+                        <ul class="card-features">
+                            <li>Мягкая, деликатная уборка</li>
+                            <li>Помощь в организации пространства</li>
+                            <li>Постоянная скидка 20-30%</li>
+                            <li>Терпение и понимание</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать со скидкой</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">♿</div>
+                        <h3>Инвалидам</h3>
+                        <div class="card-price">скидка 25%</div>
+                        <ul class="card-features">
+                            <li>Уборка с учетом особенностей</li>
+                            <li>Дополнительная помощь</li>
+                            <li>Постоянная скидка 25%</li>
+                            <li>Бесплатная консультация</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Воспользоваться льготой</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 32px 0;">
+                    <p style="font-size: 18px; color: #475467; margin-bottom: 16px;">💝 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Первая уборка для пенсионеров со скидкой 30%!</p>
+                    <a href="tel:+79922122072" class="cta-button">Получить скидку 30%</a>
+                </div>
+            </div>
+
+            <!-- Услуги для ОВЗ -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">♿ Уборка с особым вниманием и поддержкой</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏠</div>
+                        <h3>Уборка квартир</h3>
+                        <div class="card-price">от 1200₽</div>
+                        <ul class="card-features">
+                            <li>Помощь в организации пространства</li>
+                            <li>Уборка БЕЗ медицинского вмешательства</li>
+                            <li>Подъем тяжелых предметов</li>
+                            <li>Организация системы хранения</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать уборку</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏡</div>
+                        <h3>Уборка частных домов</h3>
+                        <div class="card-price">от 2000₽</div>
+                        <ul class="card-features">
+                            <li>Уборка прилегающей территории</li>
+                            <li>Внутренние помещения</li>
+                            <li>Особые требования</li>
+                            <li>Регулярное обслуживание</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать обслуживание</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 32px 0; padding: 24px; background: #EBF5FF; border-radius: 12px;">
+                    <h4 style="font-size: 18px; color: #007AFF; margin-bottom: 16px;">🎁 СПЕЦИАЛЬНЫЕ УСЛОВИЯ ДЛЯ ЛЮДЕЙ С ОВЗ:</h4>
+                    <div style="text-align: left; display: inline-block;">
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">🔸 СКИДКА 25% НА ПЕРВУЮ УБОРКУ</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">🔸 СКИДКА 20% НА РЕГУЛЯРНОЕ ОБСЛУЖИВАНИЕ</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">🔸 ВОЗМОЖНОСТЬ ПОЭТАПНОЙ УБОРКИ</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">🔸 ПОМОЩЬ В ПОДЪЕМЕ ПО ЛЕСТНИЦЕ</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 16px;">🔸 ПЕРВАЯ БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
+                    </div>
+                    <p style="font-size: 14px; color: #856404; margin-bottom: 16px;">🚫 ВАЖНО: МЫ НЕ ПРЕДОСТАВЛЯЕМ МЕДИЦИНСКИЕ УСЛУГИ<br>Только качественная уборка с особым вниманием!</p>
+                    <a href="tel:+79922122072" class="cta-button">Получить консультацию</a>
+                </div>
+            </div>
+
+            <!-- Химчистка -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">🛋️ Дарим вторую жизнь вашим любимым вещам!</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🛋️</div>
+                        <h3>Мебель</h3>
+                        <div class="card-price">от 300₽</div>
+                        <ul class="card-features">
+                            <li>Диваны</li>
+                            <li>Кресла</li>
+                            <li>Стулья</li>
+                            <li>Автомобильная мебель</li>
+                        </ul>
+                        <p style="font-size: 14px; color: #007AFF; font-weight: 600; margin: 16px 0;">✨ СПАСЕМ ЛЮБОЙ ВИД ЗАГРЯЗНЕНИЙ!</p>
+                        <a href="tel:+79922122072" class="card-button">Вызвать на дом</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏺</div>
+                        <h3>Ковры</h3>
+                        <div class="card-price">от 400₽</div>
+                        <ul class="card-features">
+                            <li>Любые размеры</li>
+                            <li>Деликатные</li>
+                            <li>Антистатик</li>
+                            <li>Пятновыведение</li>
+                        </ul>
+                        <p style="font-size: 14px; color: #007AFF; font-weight: 600; margin: 16px 0;">🌟 ЛЮБЫЕ ПЯТНА В ОДНОЙ КОМНАТЕ!</p>
+                        <a href="tel:+79922122072" class="card-button">Забрать/привезти</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🛏️</div>
+                        <h3>Матрасы</h3>
+                        <div class="card-price">от 500₽</div>
+                        <ul class="card-features">
+                            <li>Двусторонняя чистка</li>
+                            <li>Дезинфекция</li>
+                            <li>Устранение запахов</li>
+                            <li>Глубокая очистка</li>
+                        </ul>
+                        <p style="font-size: 14px; color: #007AFF; font-weight: 600; margin: 16px 0;">💤 КРЕПКИЙ СОН ГАРАНТИРОВАН!</p>
+                        <a href="tel:+79922122072" class="card-button">Выезд на место</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 32px 0;">
+                    <p style="font-size: 18px; color: #007AFF; margin-bottom: 16px;">🎁 СУПЕРПРЕДЛОЖЕНИЕ: Чистка 3 предметов мебели за 2000₽!</p>
+                    <a href="tel:+79922122072" class="cta-button">Воспользоваться предложением</a>
+                </div>
+            </div>
+
+            <!-- Уборка паром -->
+            <div style="margin-bottom: 64px;">
+                <h3 style="text-align: center; font-size: 32px; margin-bottom: 48px;">💨 Уборка паром: глубокая дезинфекция без химии!</h3>
+                <div class="cards-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏠</div>
+                        <h3>Квартиры</h3>
+                        <div class="card-price">от 300₽/м²</div>
+                        <ul class="card-features">
+                            <li>Глубокая дезинфекция</li>
+                            <li>Убийство микробов 99.9%</li>
+                            <li>Удаление неприятных запахов</li>
+                            <li>Экологически безопасно</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Заказать уборку</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🏢</div>
+                        <h3>Офисы</h3>
+                        <div class="card-price">от 350₽/м²</div>
+                        <ul class="card-features">
+                            <li>Обеззараживание воздуха</li>
+                            <li>Очистка поверхностей</li>
+                            <li>Без химии!</li>
+                            <li>Безопасность сотрудников</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Оформить заказ</a>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">🛋️</div>
+                        <h3>Мебель</h3>
+                        <div class="card-price">от 500₽</div>
+                        <ul class="card-features">
+                            <li>Деликатная очистка</li>
+                            <li>Удаление запахов</li>
+                            <li>Гипоаллергенно</li>
+                            <li>Безопасно</li>
+                        </ul>
+                        <a href="tel:+79922122072" class="card-button">Вызвать на дом</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 32px 0; padding: 24px; background: #EBF5FF; border-radius: 12px;">
+                    <h4 style="font-size: 18px; color: #007AFF; margin-bottom: 16px;">🏥 ОСОБО РЕКОМЕНДУЕТСЯ:</h4>
+                    <div style="text-align: left; display: inline-block; margin-bottom: 16px;">
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">✓ Семьям с детьми и аллергиками</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">✓ Домашним животным владельцам</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">✓ Для обеззараживания после болезни</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 8px;">✓ Удаление пылевых клещей</p>
+                        <p style="font-size: 14px; color: #475467; margin-bottom: 16px;">✓ Очистка ванных комнат и кухонь</p>
+                    </div>
+                    <p style="font-size: 14px; color: #12B76A; margin-bottom: 16px;">⚠️ ЭКОЛОГИЧНО И БЕЗОПАСНО:<br>Температура 180°C гарантирует уничтожение всех микробов!</p>
+                    <a href="tel:+79922122072" class="cta-button">Заказать уборку паром</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>рекомендуют нас друзьям</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4.9/5</h3>
+                    <p>средняя оценка в отзывах</p>
+                </div>
+                <div class="stat-item">
+                    <h3>0</h3>
+                    <p>жалоб на качество за прошлый месяц</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>работаем для вашего удобства</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title">⭐ Нам доверяют множество клиентов!</h2>
+            <p class="section-subtitle">Что говорят о нас наши клиенты</p>
+            
+            <div class="cards-grid">
+                <div class="card animate-on-scroll">
+                    <div style="color: #F79009; font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 16px;">"Потрясающий результат! Дом стал как после ремонта!"</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: #007AFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">МК</div>
+                        <div>
+                            <p style="font-weight: 600;">Марина К.</p>
+                            <p style="font-size: 14px; color: #475467;">5 дней назад</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div style="color: #F79009; font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 16px;">"Работают быстро и качественно. Рекомендую всем!"</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: #007AFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">ДП</div>
+                        <div>
+                            <p style="font-weight: 600;">Дмитрий П.</p>
+                            <p style="font-size: 14px; color: #475467;">неделю назад</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div style="color: #F79009; font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 16px;">"Отличная команда! Все сделали аккуратно и в срок."</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: #007AFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">ЕИ</div>
+                        <div>
+                            <p style="font-weight: 600;">Елена И.</p>
+                            <p style="font-size: 14px; color: #475467;">2 недели назад</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div style="color: #F79009; font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 16px;">"Наконец-то нашли надежную службу уборки в Перми!"</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: #007AFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">АС</div>
+                        <div>
+                            <p style="font-weight: 600;">Александр С.</p>
+                            <p style="font-size: 14px; color: #475467;">месяц назад</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>📞 Свяжитесь с нами прямо сейчас!</h2>
+                    <p style="font-size: 18px; color: #475467; margin-bottom: 32px;">Готовы сделать ваш дом идеально чистым. Звоните или пишите!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p><a href="tel:+79922122072">+7 (992) 212-20-72</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/79922122072" target="_blank">Написать в WhatsApp</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <h4>ВКонтакте</h4>
+                            <p><a href="https://m.vk.com/cleandom159" target="_blank">Наша группа VK</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>Режим работы</h4>
+                            <p>Ежедневно 24/7</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="tel:+79922122072" class="social-link" title="Позвонить">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/79922122072" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://m.vk.com/cleandom159" class="social-link" target="_blank" title="VK">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="background: #F8F9FA; padding: 48px; border-radius: 12px; text-align: center;">
+                    <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 16px; color: #1D2939;">💎 Специальные предложения</h3>
+                    <p style="font-size: 16px; color: #475467; margin-bottom: 32px;">Воспользуйтесь нашими эксклюзивными предложениями и сэкономьте!</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;">
+                        <div style="padding: 16px; background: #FFFFFF; border-radius: 8px; border-left: 4px solid #007AFF;">
+                            <h4 style="color: #007AFF; font-weight: 600; margin-bottom: 8px;">🎁 НОВОСЕЛАМ</h4>
+                            <p style="font-size: 14px; color: #475467;">Скидка 20% на первую генеральную уборку + бесплатная мойка 3х окон</p>
+                        </div>
+                        
+                        <div style="padding: 16px; background: #FFFFFF; border-radius: 8px; border-left: 4px solid #12B76A;">
+                            <h4 style="color: #12B76A; font-weight: 600; margin-bottom: 8px;">👥 ПРИВЕДИ ДРУГА</h4>
+                            <p style="font-size: 14px; color: #475467;">Скидка 15% вам и вашему другу при заказе от 2000₽</p>
+                        </div>
+                        
+                        <div style="padding: 16px; background: #FFFFFF; border-radius: 8px; border-left: 4px solid #F79009;">
+                            <h4 style="color: #F79009; font-weight: 600; margin-bottom: 8px;">👴 ПЕНСИОНЕРАМ</h4>
+                            <p style="font-size: 14px; color: #475467;">Постоянная скидка 15% + первая уборка со скидкой 30%</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="tel:+79922122072" class="btn-primary">Рассчитать стоимость</a>
+                        <a href="tel:+79922122072" class="btn-secondary">Заказать уборку сейчас</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #1D2939; color: white; padding: 48px 0; text-align: center;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; flex-wrap: wrap; gap: 24px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div class="logo-icon">
+                        <img src="logo_base.jpg" alt="Чистый дом 159 - Логотип">
+                    </div>
+                    <span style="font-size: 24px; font-weight: 700;">Чистый дом 159</span>
+                </div>
+                
+                <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+                    <a href="tel:+79922122072" style="color: white; text-decoration: none; font-weight: 500;">
+                        📞 +7 (992) 212-20-72
+                    </a>
+                    <a href="https://m.vk.com/cleandom159" target="_blank" style="color: white; text-decoration: none;">
+                        VK
+                    </a>
+                    <a href="https://wa.me/79922122072" target="_blank" style="color: white; text-decoration: none;">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid #475467; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                <p style="font-size: 14px; color: #98A2B3;">© 2025 Чистый дом 159. Все права защищены.</p>
+                <p style="font-size: 14px; color: #98A2B3;">Профессиональная уборка в Перми</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Phone number formatting for Russia
+        const phoneLink = document.querySelector('a[href^="tel:"]');
+        if (phoneLink) {
+            phoneLink.addEventListener('click', function(e) {
+                // Track phone call clicks for analytics
+                console.log('Phone call initiated');
+            });
+        }
+
+        // WhatsApp tracking
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                console.log('WhatsApp contact initiated');
+            });
+        });
+
+        // VK tracking
+        document.querySelectorAll('a[href*="vk.com"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                console.log('VK link clicked');
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

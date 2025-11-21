@@ -1,0 +1,11 @@
+Список файлов для загрузки на GitHub:
+
+1. index.html
+2. .nojekyll
+3. logo_base.jpg
+4. hero_video.mp4
+5. robots.txt
+6. sitemap.xml
+7. README.md
+
+Всего: 8 файлов (включая инструкции)
