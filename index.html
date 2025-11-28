@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональная уборка квартир и офисов в Перми. Чистый дом 159 - клининговые услуги с гарантией качества. Оплата после выполнения!">
+    <meta name="keywords" content="уборка квартир Пермь, клининг Пермь, генеральная уборка, химчистка мебели, уборка офисов">
+    <title>Чистый дом 159 - Профессиональная уборка в Перми | Клининговые услуги</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-brand">
+                    <a href="#" class="logo">
+                        <img src="imgs/logo.png" alt="Чистый дом 159 - клининговые услуги">
+                    </a>
+                    <div class="brand-name">
+                        <span class="brand-main">Чистый дом</span>
+                        <span class="brand-number">159</span>
+                    </div>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <a href="#services">Услуги</a>
+                    <a href="#prices">Цены</a>
+                    <a href="#process">Как мы работаем</a>
+                    <a href="#contact">Контакты</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://m.vk.com/cleandom159" target="_blank" rel="noopener noreferrer" class="social-link vk-link" aria-label="ВКонтакте">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.785 16.241s.288-.032.436-.193c.136-.148.132-.425.132-.425s-.019-1.298.574-1.489c.585-.188 1.337 1.255 2.133 1.811.602.421 1.06.329 1.06.329l2.128-.03s1.113-.07.585-.957c-.043-.072-.308-.658-1.588-1.86-1.34-1.257-1.16-1.054.453-3.229.983-1.324 1.375-2.132 1.252-2.479-.117-.332-.84-.244-.84-.244l-2.396.015s-.178-.025-.31.056c-.129.079-.212.264-.212.264s-.38 1.027-.886 1.901c-1.067 1.842-1.495 1.94-1.67 1.825-.406-.267-.305-1.075-.305-1.649 0-1.792.267-2.54-.52-2.733-.261-.064-.453-.106-1.121-.113-.858-.009-1.585.003-1.996.208-.274.136-.485.44-.356.458.159.022.52.099.711.364.247.342.238 1.111.238 1.111s.142 2.109-.331 2.371c-.324.18-.768-.187-1.723-1.862-.489-.853-.858-1.797-.858-1.797s-.071-.177-.198-.272c-.154-.115-.37-.152-.37-.152l-2.276.015s-.342.01-.467.161c-.111.134-.009.411-.009.411s1.786 4.249 3.808 6.392c1.855 1.966 3.963 1.835 3.963 1.835h.955z"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+79922122072" class="phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>8 (992) 212-20-72</span>
+                    </a>
+                    <button class="btn btn-primary" onclick="scrollToForm()">Заказать уборку</button>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Профессиональная уборка в Перми</h1>
+                    <p class="hero-subtitle">Вернем вашему дому и офису идеальную чистоту. Быстро, качественно и надежно. <strong>Платите только после выполнения!</strong></p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Выезд в день обращения</span>
+                        </div>
+                        <div class="hero-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Гарантия качества</span>
+                        </div>
+                        <div class="hero-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Безопасные эко средства</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large" onclick="scrollToForm()">Заказать уборку</button>
+                        <button class="btn btn-secondary btn-large" onclick="scrollToForm()">Рассчитать стоимость</button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="imgs/hero_video.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Оплата после выполнения</h3>
+                    <p>Платите только после полного завершения работ и проверки качества</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Гарантия качества</h3>
+                    <p>Гарантия на выполненную работу. Бесплатно устраним недочеты</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Быстрый выезд</h3>
+                    <p>Приедем в день обращения. Экстренная уборка - от 2 часов</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                            <line x1="16" y1="8" x2="2" y2="22"/>
+                            <line x1="17.5" y1="15" x2="9" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Эко средства</h3>
+                    <p>Безопасная химия для детей и животных. Гипоаллергенные средства</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Опытная команда</h3>
+                    <p>Профессионалы с опытом работы от 3 лет. Проверенные сотрудники</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>Все виды уборки</h3>
+                    <p>21 вид услуг: от стандартной уборки до химчистки и помощи людям с ОВЗ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            
+            <div class="service-filters">
+                <button class="filter-btn active" data-category="all">Все услуги</button>
+                <button class="filter-btn" data-category="basic">Базовая уборка</button>
+                <button class="filter-btn" data-category="b2b">B2B клининг</button>
+                <button class="filter-btn" data-category="social">Соц. услуги</button>
+                <button class="filter-btn" data-category="special">Спец. услуги</button>
+                <button class="filter-btn" data-category="chemical">Химчистка</button>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-category="basic">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>Стандартная уборка</h3>
+                    <ul class="service-list">
+                        <li>Поддерживающая уборка</li>
+                        <li>Комплексная уборка квартиры/дома</li>
+                        <li>Генеральная уборка</li>
+                        <li>Сезонная уборка</li>
+                        <li>Уборка новостроек</li>
+                        <li>Мытье окон (зима/лето)</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-category="basic special">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 8.3V11M7 7H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2"/>
+                            <path d="M22 12a10 10 0 1 1-3-7"/>
+                        </svg>
+                    </div>
+                    <h3>Деликатная уборка</h3>
+                    <ul class="service-list">
+                        <li>Уборка с сохранением вещей</li>
+                        <li>Уборка для пожилых людей</li>
+                        <li>Сопровождение людей с ОВЗ</li>
+                        <li>Поддержка людей с деменцией</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-category="b2b">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3>B2B клининг</h3>
+                    <ul class="service-list">
+                        <li>Уборка офисов</li>
+                        <li>Поддержание порядка в офисе</li>
+                        <li>Мытье витрин и входных групп</li>
+                        <li>Уборка коммерческих помещений</li>
+                        <li>Поквартальная уборка торговых центров</li>
+                        <li>Мытье лифтов</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-category="chemical">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3>Химчистка</h3>
+                    <ul class="service-list">
+                        <li>Химчистка мягкой мебели</li>
+                        <li>Химчистка ковров</li>
+                        <li>Чистка матрасов</li>
+                        <li>Чистка подушек</li>
+                        <li>Чистка штор</li>
+                        <li>Чистка пуховиков</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-category="basic">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l8-4v18"/>
+                            <path d="M19 21V11l-6-4"/>
+                            <path d="M9 9v.01"/>
+                            <path d="M9 12v.01"/>
+                            <path d="M9 15v.01"/>
+                            <path d="M9 18v.01"/>
+                        </svg>
+                    </div>
+                    <h3>Мытье окон</h3>
+                    <ul class="service-list">
+                        <li>Мытье стеклянных поверхностей</li>
+                        <li>Мытье окон (зима)</li>
+                        <li>Мытье окон (лето)</li>
+                        <li>Мытье витражей</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-category="social special">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Социальная помощь</h3>
+                    <ul class="service-list">
+                        <li>Помощь пожилым людям</li>
+                        <li>Сопровождение людей с ОВЗ</li>
+                        <li>Поддержка людей с деменцией</li>
+                        <li>Социальная адаптация</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="prices">
+        <div class="container">
+            <h2 class="section-title">Цены на услуги</h2>
+            
+            <div class="price-tables">
+                <div class="price-table">
+                    <div class="price-header">
+                        <h3>Стандартная уборка</h3>
+                        <div class="price-value">от 800 ₽</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>✓ Поддерживающая уборка</li>
+                        <li>✓ Комплексная уборка</li>
+                        <li>✓ Генеральная уборка</li>
+                        <li>✓ Сезонная уборка</li>
+                        <li>✓ Уборка новостроек</li>
+                    </ul>
+                    <div class="price-note">
+                        Цена зависит от площади и типа помещения
+                    </div>
+                </div>
+                
+                <div class="price-table featured">
+                    <div class="price-header">
+                        <h3>Химчистка</h3>
+                        <div class="price-value">от 1500 ₽</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>✓ Мягкая мебель</li>
+                        <li>✓ Ковры и ковролин</li>
+                        <li>✓ Матрасы и подушки</li>
+                        <li>✓ Шторы и текстиль</li>
+                        <li>✓ Пуховики</li>
+                    </ul>
+                    <div class="price-note">
+                        Специальные цены на большие объемы
+                    </div>
+                </div>
+                
+                <div class="price-table">
+                    <div class="price-header">
+                        <h3>B2B клининг</h3>
+                        <div class="price-value">от 1200 ₽</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>✓ Офисы</li>
+                        <li>✓ Торговые центры</li>
+                        <li>✓ Лифты</li>
+                        <li>✓ Витрины</li>
+                        <li>✓ Поддержание порядка</li>
+                    </ul>
+                    <div class="price-note">
+                        Скидки при долгосрочном сотрудничестве
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions -->
+    <section class="promotions">
+        <div class="container">
+            <h2 class="section-title">Акции и предложения</h2>
+            
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <div class="promo-badge">-20%</div>
+                    <h3>Скидка 20%</h3>
+                    <p>На химчистку при заказе от 3000₽</p>
+                    <div class="promo-valid">Действует до конца месяца</div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-badge">FREE</div>
+                    <h3>Бесплатная</h3>
+                    <p>Консультация и расчет стоимости</p>
+                    <div class="promo-valid">Без обязательств</div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-badge">NEW</div>
+                    <h3>Безопасно</h3>
+                    <p>Эко-средства и гипоаллергенная химия</p>
+                    <div class="promo-valid">Для детей и животных</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Заявка</h3>
+                    <p>Оставляете заявку по телефону или в мессенджере</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Расчет</h3>
+                    <p>Консультируем и рассчитываем стоимость</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Выезд</h3>
+                    <p>Приезжаем в оговоренное время</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Уборка</h3>
+                    <p>Проводим качественную уборку</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Оплата</h3>
+                    <p>Оплата только после завершения работ</p>
+                </div>
+            </div>
+            
+            <div class="process-video">
+                <h3 class="process-video-title">Посмотрите, как мы работаем</h3>
+                <div class="process-video-container">
+                    <video controls playsinline>
+                        <source src="imgs/process_video.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="imgs/cleaning_team_3.jpg" alt="Профессиональная команда клининга">
+                    </div>
+                    <h3>Команда профессионалов</h3>
+                    <p>Опытные сотрудники с профильной подготовкой</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="imgs/cleaning_team_5.jpg" alt="Качественная уборка квартир">
+                    </div>
+                    <h3>Качественная работа</h3>
+                    <p>Используем только профессиональное оборудование</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="imgs/cleaning_team_9.jpg" alt="Современные технологии уборки">
+                    </div>
+                    <h3>Современные технологии</h3>
+                    <p>Экологичные и безопасные средства</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form" id="contact">
+        <div class="container">
+            <h2 class="section-title">Заказать уборку</h2>
+            
+            <form class="contact-form" id="orderForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Услуга</label>
+                        <select id="service" name="service" required>
+                            <option value="">Выберите услугу</option>
+                            <option value="standard">Стандартная уборка</option>
+                            <option value="general">Генеральная уборка</option>
+                            <option value="cleaning">Уборка новостроек</option>
+                            <option value="chimical">Химчистка</option>
+                            <option value="office">B2B клининг</option>
+                            <option value="social">Социальные услуги</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="area">Площадь (м²)</label>
+                        <input type="number" id="area" name="area" min="1" max="10000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Дата уборки</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Время</label>
+                        <select id="time" name="time" required>
+                            <option value="">Выберите время</option>
+                            <option value="9:00">9:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group form-group-full">
+                        <label for="message">Дополнительная информация</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Расскажите подробнее о задаче..."></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="imgs/logo.png" alt="Чистый дом 159">
+                        <span>Чистый дом 159</span>
+                    </div>
+                    <p>Профессиональная уборка в Перми. Качество, проверенное временем.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#services">Стандартная уборка</a></li>
+                        <li><a href="#services">Химчистка</a></li>
+                        <li><a href="#services">B2B клининг</a></li>
+                        <li><a href="#services">Социальные услуги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <a href="tel:+79922122072">8 (992) 212-20-72</a>
+                        <a href="https://m.vk.com/cleandom159" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+                        <span>Пермь, ул. Ленина, 1</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Время работы</h3>
+                    <p>Ежедневно: 8:00 - 21:00</p>
+                    <p>Экстренный выезд: круглосуточно</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Политика конфиденциальности</a>
+                    <a href="#terms">Условия использования</a>
+                </div>
+                <div class="footer-bottom-text">
+                    © 2024 Чистый дом 159. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
