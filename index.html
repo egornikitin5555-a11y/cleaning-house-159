@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональная уборка квартир и офисов в Перми. Чистый дом 159 - клининговые услуги с гарантией качества. Оплата после выполнения!">
+    <meta name="keywords" content="уборка квартир Пермь, клининг Пермь, генеральная уборка, химчистка мебели, уборка офисов">
+    <title>Чистый дом 159 - Профессиональная уборка в Перми | Клининговые услуги</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Исправленный CSS -->
+    <link rel="stylesheet" href="hero_styles.css">
+    
+    <!-- Дополнительные стили для корректного отображения hero секции -->
+    <style>
+        .hero-content-overlay {
+            position: relative;
+            overflow: visible;
+        }
+        
+        .hero-content-overlay .hero-text {
+            max-width: 700px;
+            padding-left: 2rem;
+            text-align: left;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        .hero-content-overlay .hero-cta {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            left: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: auto;
+            z-index: 15;
+        }
+        
+        .hero-features {
+            display: flex !important;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin: 1rem 0 2rem 0;
+        }
+        
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        /* Мобильные устройства */
+        @media (max-width: 768px) {
+            .hero-content-overlay .hero-text {
+                padding-left: 1rem;
+                max-width: 90vw;
+            }
+            
+            .hero-content-overlay .hero-cta {
+                bottom: 1rem;
+                right: 1rem;
+                gap: 0.5rem;
+            }
+            
+            .hero-cta .btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .hero-features {
+                gap: 0.5rem;
+                margin: 0.75rem 0 1.5rem 0;
+            }
+            
+            .hero-feature {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-compact" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/logo.png" alt="Чистый дом 159 - клининговые услуги">
+                    </a>
+                    <div class="brand-name">
+                        <span class="brand-main">Чистый дом</span>
+                        <span class="brand-number">159</span>
+                    </div>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <a href="#services">Услуги</a>
+                    <a href="#prices">Цены</a>
+                    <a href="#process">Как мы работаем</a>
+                    <a href="#contact">Контакты</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://m.vk.com/cleandom159" target="_blank" class="social-link vk-link" aria-label="ВКонтакте">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.785 16.241s.288-.032.436-.193c.136-.148.132-.425.132-.425s-.019-1.298.574-1.489c.585-.188 1.337 1.255 2.133 1.811.602.421 1.06.329 1.06.329l2.128-.03s1.113-.07.585-.957c-.043-.072-.308-.658-1.588-1.86-1.34-1.257-1.16-1.054.453-3.229.983-1.324 1.375-2.132 1.252-2.479-.117-.332-.84-.244-.84-.244l-2.396.015s-.178-.025-.31.056c-.129.079-.212.264-.212.264s-.38 1.027-.886 1.901c-1.067 1.842-1.495 1.94-1.67 1.825-.406-.267-.305-1.075-.305-1.649 0-1.792.267-2.54-.52-2.733-.261-.064-.453-.106-1.121-.113-.858-.009-1.585.003-1.996.208-.274.136-.485.44-.356.458.159.022.52.099.711.364.247.342.238 1.111.238 1.111s.142 2.109-.331 2.371c-.324.18-.768-.187-1.723-1.862-.489-.853-.858-1.797-.858-1.797s-.071-.177-.198-.272c-.154-.115-.37-.152-.37-.152l-2.276.015s-.342.01-.467.161c-.111.134-.009.411-.009.411s1.786 4.249 3.808 6.392c1.855 1.966 3.963 1.835 3.963 1.835h.955z"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+79922122072" class="phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>8 (992) 212-20-72</span>
+                    </a>
+                    <button class="btn btn-primary" onclick="scrollToForm()">Заказать уборку</button>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section - ИСПРАВЛЕННАЯ ВЕРСИЯ -->
+    <section class="hero hero-video-enabled">
+        <div class="hero-background"></div>
+        <div class="hero-video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/hero_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <div class="container">
+            <div class="hero-content hero-content-overlay">
+                <div class="hero-text">
+                    <!-- ✅ ИСПРАВЛЕНО: Заголовок увеличен в 2 раза -->
+                    <h1>Профессиональная уборка в Перми</h1>
+                    <!-- ✅ ИСПРАВЛЕНО: Подзаголовок с левым выравниванием -->
+                    <p class="hero-subtitle">Вернем вашему дому и офису идеальную чистоту. Быстро, качественно и надежно. <strong>Платите только после выполнения!</strong></p>
+                    
+                    <!-- ✅ ИСПРАВЛЕНО: Все 3 преимущества ВИДНЫ на всех устройствах -->
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Выезд в день обращения</span>
+                        </div>
+                        <div class="hero-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Гарантия качества</span>
+                        </div>
+                        <div class="hero-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Безопасные эко средства</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ✅ ИСПРАВЛЕНО: Кнопки в правом нижнем углу, всегда видны -->
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-modern" onclick="scrollToForm()">Заказать уборку</button>
+                    <button class="btn btn-secondary btn-modern" onclick="scrollToForm()">Рассчитать стоимость</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Загружаем JavaScript -->
+    <script src="script.js"></script>
+    
+    <script>
+        function scrollToForm() {
+            // В реальном проекте здесь будет переход к форме заказа
+            alert('Кнопка работает! Здесь будет переход к форме заказа.');
+        }
+    </script>
+</body>
+</html>
