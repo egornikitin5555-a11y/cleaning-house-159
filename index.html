@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Чистый дом 159 — Клининговые услуги</title>
+  <meta name="description" content="Профессиональная уборка квартир и офисов в Перми. Быстро, качественно, оплата после выполнения.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-content">
+    <a class="logo" href="#"><img src="imgs/logo.png" alt="Чистый дом 159"></a>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#process">Как работаем</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="phone" href="tel:+79922122072">8 (992) 212-20-72</a>
+      <button class="btn btn-primary" onclick="scrollToForm()">Заказать</button>
+      <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-video">
+    <video autoplay muted loop playsinline preload="metadata" poster="imgs/hero_poster.jpg">
+      <source src="imgs/hero_video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+    <h1>Профессиональная уборка в Перми</h1>
+    <p class="hero-subtitle">Быстро, качественно, безопасно — <strong>оплата после выполнения</strong>.</p>
+
+    <div class="hero-cta">
+      <button class="btn btn-primary" onclick="scrollToForm()">Заказать уборку</button>
+      <button class="btn btn-secondary" onclick="scrollToForm()">Рассчитать стоимость</button>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Поддерживающая уборка</h3>
+          <p>Пылесос, влажная уборка, протирка поверхностей.</p>
+          <div class="service-price">от 80 ₽/м²</div>
+        </article>
+
+        <article class="service-card">
+          <h3>Генеральная уборка</h3>
+          <p>Глубокая чистка всех поверхностей, мойка окон.</p>
+          <div class="service-price">от 100 ₽/м²</div>
+        </article>
+
+        <article class="service-card">
+          <h3>Уборка после ремонта</h3>
+          <p>Удаление строительной пыли, вывоз мусора, дезинфекция.</p>
+          <div class="service-price">от 120 ₽/м²</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="prices">
+    <div class="container">
+      <h2 class="section-title">Цены</h2>
+      <div class="price-tables">
+        <div class="price-table">
+          <h3>Базовая уборка</h3>
+          <div class="price-row"><span>Поддерживающая</span><span class="price">80 ₽/м²</span></div>
+          <div class="price-row"><span>Генеральная</span><span class="price">100-140 ₽/м²</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+      <ol class="process-steps">
+        <li>Заявка — вы оставляете заявку любым удобным способом.</li>
+        <li>Осмотр — бесплатный выезд для оценки.</li>
+        <li>Выполнение — команда приезжает и выполняет работу.</li>
+        <li>Проверка и оплата — вы принимаете работу и платите.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="order-form" id="contact">
+    <div class="container">
+      <h2 class="section-title">Заказать уборку</h2>
+      <form id="orderForm" class="order-form-fields">
+        <label><span>Имя</span><input name="name" type="text" required></label>
+        <label><span>Телефон</span><input name="phone" type="tel" required></label>
+        <label><span>Услуга</span>
+          <select name="service" required>
+            <option value="">Выберите услугу</option>
+            <option value="supporting">Поддерживающая</option>
+            <option value="general">Генеральная</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-primary btn-full">Отправить</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <p>© 2025 Чистый дом 159 — Профессиональная уборка в Перми</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('mobileToggle').addEventListener('click', function(){
+    document.getElementById('nav').classList.toggle('nav-open');
+  });
+
+  function scrollToForm(){
+    document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+  }
+
+  document.getElementById('orderForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Форма отправлена — мы перезвоним.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
