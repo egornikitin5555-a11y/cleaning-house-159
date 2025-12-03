@@ -1,0 +1,189 @@
+/* 🔧 ИСПРАВЛЕНИЯ CSS КОНФЛИКТОВ HERO СЕКЦИИ */
+
+/* 1. УНИФИЦИРОВАННЫЕ СТИЛИ ДЛЯ HERO ВИДЕО */
+.hero-video-enabled {
+    height: 80vh !important;
+    min-height: 80vh !important;
+    max-height: 80vh !important;
+    position: relative;
+}
+
+.hero-video-background {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 1 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.hero-video-background video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    display: block !important;
+    background: #000 !important;
+}
+
+/* 2. УНИФИЦИРОВАННЫЕ СТИЛИ ДЛЯ КОНТЕНТА */
+.hero-video-enabled .container {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.hero-content-overlay {
+    position: relative !important;
+    z-index: 10 !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+/* 3. УНИФИЦИРОВАННЫЕ СТИЛИ ДЛЯ ЗАГОЛОВКА */
+.hero-video-enabled .hero-text h1 {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+    color: #00AAB5 !important;
+    margin: 0 0 20px 0 !important;
+    text-shadow: none !important;
+    flex-shrink: 0 !important;
+    letter-spacing: -0.02em !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+/* 4. УНИФИЦИРОВАННЫЕ СТИЛИ ДЛЯ ПОДЗАГОЛОВКА */
+.hero-video-enabled .hero-subtitle {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+    color: #00AAB5 !important;
+    margin: 0 0 30px 0 !important;
+    text-shadow: none !important;
+}
+
+/* 5. УНИФИЦИРОВАННЫЕ СТИЛИ ДЛЯ КНОПОК */
+.hero-video-enabled .btn-primary {
+    background-color: #00AAB5 !important;
+    color: white !important;
+    border: none !important;
+    padding: 15px 30px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+.hero-video-enabled .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    padding: 13px 28px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    text-align: center !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* 6. УНИФИЦИРОВАННЫЕ СТИЛИ ДЛЯ CTA */
+.hero-video-enabled .hero-cta {
+    display: flex !important;
+    gap: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin-top: 30px !important;
+}
+
+/* 7. АДАПТИВНОСТЬ ДЛЯ ДЕСКТОПА */
+@media (min-width: 1200px) {
+    .hero-video-enabled .hero-text h1 {
+        font-size: 3.5rem !important;
+    }
+    
+    .hero-video-enabled .hero-subtitle {
+        font-size: 1.6rem !important;
+    }
+}
+
+/* 8. АДАПТИВНОСТЬ ДЛЯ ПЛАНШЕТОВ */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero-video-enabled {
+        height: 70vh !important;
+        min-height: 70vh !important;
+        max-height: 70vh !important;
+    }
+    
+    .hero-video-enabled .hero-text h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-video-enabled .hero-subtitle {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* 9. АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ */
+@media (max-width: 767px) {
+    .hero-video-enabled {
+        height: 60vh !important;
+        min-height: 60vh !important;
+        max-height: 60vh !important;
+    }
+    
+    .hero-video-enabled .hero-text h1 {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+    
+    .hero-video-enabled .hero-subtitle {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    
+    .hero-video-enabled .hero-cta {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    .hero-video-enabled .hero-cta .btn {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+}
+
+/* 10. АНИМАЦИИ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-video-enabled .hero-text {
+    animation: fadeInUp 0.8s ease-out;
+}
