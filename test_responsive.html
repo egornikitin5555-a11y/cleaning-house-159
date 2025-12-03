@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полный тест видео позиционирования</title>
+    <link rel="stylesheet" href="styles.css?v=20251203">
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        .test-panel {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            z-index: 9999;
+            max-width: 280px;
+            font-family: monospace;
+        }
+        .test-panel h3 { margin: 0 0 10px 0; color: #00AAB5; }
+        .test-panel .info { margin: 5px 0; }
+        .test-panel .status { 
+            background: #00AAB5; 
+            padding: 3px 6px; 
+            border-radius: 3px; 
+            font-size: 10px; 
+        }
+        .device-grid {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            z-index: 9998;
+        }
+        .device-btn {
+            background: rgba(0,170,181,0.9);
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .device-btn:hover { background: rgba(0,155,163,0.9); }
+    </style>
+</head>
+<body>
+    <div class="test-panel">
+        <h3>🎥 ТЕСТ ВИДЕО ПОЗИЦИОНИРОВАНИЯ</h3>
+        <div class="info">Экран: <span id="screen-size" class="status"></span></div>
+        <div class="info">Позиция: <span id="video-position" class="status"></span></div>
+        <div class="info">Устройство: <span id="device-type" class="status"></span></div>
+        <div class="info">Статус: <span id="video-status" class="status"></span></div>
+        <div class="info">Размер видео: <span id="video-dimensions" class="status"></span></div>
+    </div>
+
+    <div class="device-grid">
+        <button class="device-btn" onclick="simulateDevice(1920, 1080)">🖥️ Десктоп 1920x1080</button>
+        <button class="device-btn" onclick="simulateDevice(1366, 768)">💻 Ноутбук 1366x768</button>
+        <button class="device-btn" onclick="simulateDevice(1024, 768)">📱 Планшет Пейзаж 1024x768</button>
+        <button class="device-btn" onclick="simulateDevice(768, 1024)">📱 Планшет Портрет 768x1024</button>
+        <button class="device-btn" onclick="simulateDevice(375, 667)">📱 iPhone SE 375x667</button>
+        <button class="device-btn" onclick="simulateDevice(360, 640)">📱 Android 360x640</button>
+        <button class="device-btn" onclick="resetSize()">🔄 Сбросить размер</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero hero-video-enabled">
+        <div class="hero-background"></div>
+        <div class="hero-video-background">
+            <video id="hero-video" autoplay muted loop playsinline>
+                <source src="imgs/hero_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <div class="container">
+            <div class="hero-content hero-content-overlay">
+                <div class="hero-text">
+                    <h1>Профессиональная уборка в Перми</h1>
+                    <p class="hero-subtitle"></p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Выезд в день обращения</span>
+                        </div>
+                        <div class="hero-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Гарантия качества</span>
+                        </div>
+                        <div class="hero-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Доступные цены</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <button class="btn btn-primary">Заказать уборку</button>
+                        <button class="btn btn-secondary">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Функции определения устройств
+        function getDeviceType(width) {
+            if (width <= 480) return '📱 Маленький экран';
+            if (width <= 767) return '📱 Мобильный';
+            if (width <= 1024) return '📱 Планшет';
+            return '🖥️ Десктоп';
+        }
+
+        function getExpectedPosition(width) {
+            if (width <= 480) return 'center 5%';
+            if (width <= 767) return 'center 10%';
+            if (width <= 1024) return 'center 15%';
+            return 'center 20%';
+        }
+
+        // Получение текущей позиции видео
+        function getVideoPosition() {
+            const video = document.querySelector('.hero-video-background video');
+            const style = getComputedStyle(video);
+            return style.objectPosition;
+        }
+
+        // Получение размеров видео
+        function getVideoDimensions() {
+            const video = document.querySelector('.hero-video-background video');
+            return `${video.videoWidth || 0}x${video.videoHeight || 0}`;
+        }
+
+        // Проверка соответствия ожидаемой позиции
+        function checkPosition(width) {
+            const expected = getExpectedPosition(width);
+            const actual = getVideoPosition();
+            return actual.includes(expected.split(' ')[1]) ? '✅ ПРАВИЛЬНО' : '❌ НЕПРАВИЛЬНО';
+        }
+
+        // Обновление информации
+        function updateInfo() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            
+            document.getElementById('screen-size').textContent = `${width}x${height}`;
+            document.getElementById('video-position').textContent = getVideoPosition();
+            document.getElementById('device-type').textContent = getDeviceType(width);
+            document.getElementById('video-status').textContent = checkPosition(width);
+            document.getElementById('video-dimensions').textContent = getVideoDimensions();
+        }
+
+        // Симуляция размера устройства
+        function simulateDevice(width, height) {
+            document.body.style.width = width + 'px';
+            document.body.style.height = height + 'px';
+            document.body.style.overflow = 'auto';
+            updateInfo();
+            console.log(`Симуляция устройства: ${width}x${height}`);
+        }
+
+        // Сброс размера
+        function resetSize() {
+            document.body.style.width = 'auto';
+            document.body.style.height = 'auto';
+            document.body.style.overflow = 'auto';
+            updateInfo();
+            console.log('Размер сброшен');
+        }
+
+        // Инициализация
+        updateInfo();
+        
+        // Обновление при изменении размера окна
+        window.addEventListener('resize', updateInfo);
+
+        // Отслеживание ошибок видео
+        const video = document.getElementById('hero-video');
+        video.addEventListener('error', (e) => {
+            console.error('Ошибка загрузки видео:', e);
+            document.getElementById('video-status').textContent = '❌ ОШИБКА';
+        });
+
+        video.addEventListener('loadstart', () => {
+            console.log('Начало загрузки видео');
+            document.getElementById('video-status').textContent = '🔄 ЗАГРУЗКА';
+        });
+
+        video.addEventListener('canplay', () => {
+            console.log('Видео готово к воспроизведению');
+            document.getElementById('video-status').textContent = '✅ ГОТОВО';
+            updateInfo();
+        });
+
+        video.addEventListener('playing', () => {
+            console.log('Видео воспроизводится');
+            document.getElementById('video-status').textContent = '▶️ ВОСПРОИЗВЕДЕНИЕ';
+        });
+    </script>
+</body>
+</html>
